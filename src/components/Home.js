@@ -39,7 +39,7 @@ const Home = () => {
             {
               social_meedia?.map((icon,i) => (
                 <div key={i} className='text-gray-600 hover:text-li-white cursor-pointer'>
-                  <a href= {icon.link}><ion-icon name= {icon.name}></ion-icon></a>
+                  <a href= {icon.link} target='_blank' rel='noreferrer'> <ion-icon name= {icon.name}></ion-icon></a>
                 </div>
               ))
             }
