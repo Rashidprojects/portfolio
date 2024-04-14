@@ -11,7 +11,8 @@ module.exports = {
       'cyan' : '#0891b2',
       'li-white' : '#f1f5f9',
       'gray-600' : '#4b5563',
-      'gray-400' : '#9ca3af'
+      'gray-400' : '#9ca3af',
+      'gray-300' : '#d1d5db'
     }
   },
   plugins: [require("daisyui")],
