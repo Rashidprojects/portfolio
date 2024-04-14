@@ -22,19 +22,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* .aboutImg::after{
+.aboutImg::after{
   @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-600 -z-10
-} */
-.aboutImg::after {
-  content: '';
-  width: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 20px; /* Adjust as needed */
-  transform: rotate(12deg); /* Adjust the rotation angle */
-  height: 100%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6); /* Adjust the background color and opacity */
-  z-index: -10;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-li-white
 }
 

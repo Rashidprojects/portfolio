@@ -3,11 +3,23 @@ import hero from '../assets/portfolio-hero.png'
 
 const Home = () => {
   const social_meedia = [
-    'logo-instagram',
-    'logo-whatsapp',
-    'logo-linkedin',
-    'logo-github'
-
+    {
+      name: 'logo-instagram',
+      link: 'https://www.instagram.com/rashid___raz__/'
+    },
+    {
+      name: 'logo-whatsapp',
+      link: 'https://wa.me/918075764747'
+    },
+    {
+      name: 'logo-linkedin',
+      link: 'https://www.linkedin.com/in/mohammedrashidc/'
+    },
+    {
+      name: 'logo-github',
+      link: 'https://github.com/rashidrazm'
+    },
+    
   ]
   return (
     <section id='home'
@@ -25,9 +37,9 @@ const Home = () => {
           <button className='btn-primary mt-8'>Contact Me</button>
           <div className='mt-8 text-3xl flex items-center md:justify-start justify-center gap-5'>
             {
-              social_meedia?.map(icon => (
-                <div key={icon} className='text-gray-600 hover:text-li-white cursor-pointer'>
-                  <ion-icon name= {icon}></ion-icon>
+              social_meedia?.map((icon,i) => (
+                <div key={i} className='text-gray-600 hover:text-li-white cursor-pointer'>
+                  <a href= {icon.link}><ion-icon name= {icon.name}></ion-icon></a>
                 </div>
               ))
             }
