@@ -30,3 +30,10 @@ code {
   @apply bg-li-white
 }
 
+input,textarea {
+  @apply bg-gray-700 outline-none rounded-lg p-3;
+}
+::placeholder {
+  @apply text-lg;
+}
+
