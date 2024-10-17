@@ -10,7 +10,7 @@ import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className='p-[20px] main'>
+    <div className='p-[20px] main bg-black'>
      {/* Nav Bar */}
      <NavBar />
      {/* Bot  */}
